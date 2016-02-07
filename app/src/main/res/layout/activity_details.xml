@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/textColorTitle"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="@string/text_title"
+            android:textColor="@color/textColorWhite"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <com.project.android.popularmoviesstage1.SquareImageView
+                android:id="@+id/movie_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/img_not_found" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="7dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRelDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="25sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/textRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/text_rating"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="7dp" />
+
+        <TextView
+            android:id="@+id/textSynopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="10dp"
+            android:text="@string/text_synopsis"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+</ScrollView>

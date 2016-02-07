@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pop Movies</string>
+    <string name="action_sort_popular">Sort by Popularity</string>
+    <string name="action_sort_rating">Sort by Rating</string>
+    <string name="title_activity_details">MovieDetail</string>
+
+    <string name="text_title">No Title</string>
+    <string name="text_rating">No Rating</string>
+    <string name="text_synopsis">No overview found.</string>
+</resources>
